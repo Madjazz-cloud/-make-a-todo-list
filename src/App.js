@@ -26,7 +26,7 @@ function App() {
           <label>
             <input
               type="text"
-              placeholder="add TODO"
+              placeholder="add todo"
               value={taskDraft.todoTitle}
               onChange={event =>
                 setTaskDraft({ ...taskDraft, todoTitle: event.target.value })
@@ -42,7 +42,7 @@ function App() {
                 textDecoration: task.completed ? 'line-through' : 'none'
               }}
             >
-              {key}:{task.todoTitle}
+              {task.todoTitle}
               <button
                 onClick={function strikeTodo() {
                   const newList = [...list];
